@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="separatepackage.HardcodeDataProvider"/>
+      <class name="package1.CreateOrganization"/>
+      <class name="separatepackage.PracticeDataProviderTest"/>
+      <class name="package1.createcontactwithorgwithPOMTest"/>
+      <class name="separatepackage.newclassTest"/>
+      <class name="separatepackage.CreateContactWithOrganizationwithBaseTest"/>
+      <class name="package1.CreatecontactpageWithPOMTest"/>
+      <class name="separatepackage.PracticeExceldataprovder"/>
+      <class name="package1.CreateOganizationWithIndustrytest"/>
+      <class name="package1.CreateContactWithOrganizationTest"/>
+      <class name="separatepackage.multipledate"/>
+      <class name="package1.CreateContactTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

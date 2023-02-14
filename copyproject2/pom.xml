@@ -11,24 +11,6 @@
 </properties>
 
 
- <build>
- <plugins>
-	 
-	 <plugin>
-		 <groupId>org.apache.maven.plugins</groupId>
-		 <artifactId>maven-compiler-plugin</artifactId>
-		 <version>3.10.1</version>
-	 </plugin>
-	 
-    <plugin>
-     <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-       <version>3.0.0-M8</version>
-      
-        </plugin> 
-        </plugins>
-      </build> 
-
 
   <dependencies>
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -95,6 +77,25 @@
   </dependencies>
 
 
+ <build>
+ <plugins>
+	 
+	 <plugin>
+		 <groupId>org.apache.maven.plugins</groupId>
+		 <artifactId>maven-compiler-plugin</artifactId>
+		 <version>3.10.1</version>
+	 </plugin>
+	 
+    <plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+       <version>3.0.0-M8</version>
+      
+        </plugin> 
+        </plugins>
+      </build> 
+
+
 
 <profiles>
 	<profile>
@@ -108,6 +109,26 @@
         <configuration>
          <suiteXmlFiles> 
          <suiteXmlFile>testngnew.xml</suiteXmlFile>
+      </suiteXmlFiles>
+        </configuration>
+        </plugin> 
+        </plugins>
+      </build> 
+
+	
+	</profile>
+	
+	<profile>
+	<id>newsuite</id>
+ <build>
+   <plugins>
+    <plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+       <version>3.0.0-M8</version>
+        <configuration>
+         <suiteXmlFiles> 
+         <suiteXmlFile>testng_newsuite.xml</suiteXmlFile>
       </suiteXmlFiles>
         </configuration>
         </plugin> 
